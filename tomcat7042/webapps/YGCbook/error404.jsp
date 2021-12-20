@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" contentType="text/html; charset=gbk" isErrorPage="true"%>
+ÓÃ»§×¢²áÒ³Ãæ(userInfoReg.jsp<%@ page language="java" import="java.util.*" contentType="text/html; charset=gbk" isErrorPage="true"%>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>

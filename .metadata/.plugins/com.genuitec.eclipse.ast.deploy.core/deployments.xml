@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<deployments>
+  <deployment context-root="/YGCbook" deployment-path="D:/20211218/myFirstRep/tomcat7042/webapps/YGCbook" project-name="YGCbook" server-id="tomcat7Server" should-backup="true" state="DEPLOYED" type="WEB"/>
+</deployments>

@@ -1,0 +1,19 @@
+INDEX VERSION 1.126
+D:\20211218\myFirstRep\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4179834241.index
+\YGCbook\src
+D:\20211218\myFirstRep\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1556183175.index
+\YGCbook\src
+D:\20211218\myFirstRep\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2955650405.index
+\YGCbook\src
+D:\20211218\myFirstRep\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4152148763.index
+\YGCbook\src
+D:\20211218\myFirstRep\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1540369794.index
+\YGCbook\src
+D:\20211218\myFirstRep\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1849020688.index
+\YGCbook\src
+D:\20211218\myFirstRep\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2363696129.index
+\YGCbook\src
+D:\20211218\myFirstRep\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2675824052.index
+\YGCbook\src
+D:\20211218\myFirstRep\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2662999931.index
+\YGCbook\src
