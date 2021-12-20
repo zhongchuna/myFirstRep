@@ -1,4 +1,4 @@
-userInfoSearch.jsp<%@ page language="java" import="java.util.*" contentType="text/html; charset=utf-8"%>
+<%@ page language="java" import="java.util.*" contentType="text/html; charset=utf-8"%>
 
 
 
