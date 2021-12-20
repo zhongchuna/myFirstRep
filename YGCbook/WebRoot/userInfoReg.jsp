@@ -1,11 +1,8 @@
 <%@ page language="java" import="java.util.*" contentType="text/html; charset=utf-8"%>
-
-
-
 <html>
 <head>
 <title> 云工厂网上书店注册页面</title>
- <style>
+<style>
 	    #username{
 	   border:1px solid black;
        width:180px;
@@ -24,33 +21,19 @@
        height:30px;
        border-radius:25px;
 		}
-		.buttonStyle{
-			width:100px;
-		     text-align:center;
-		     line-height:100%;
-		     padding:0.3em;
-		     font:16px Arial,sans-serif bold;
-		     font-style:normal;
-		     text-decoration:none;
-		     margin:2px;
-		     vertical-align:text-bottom;
-		     zoom:1;
-		     outline:none;
-		     font-size-adjust:none;
-		     font-stretch:normal;
-		     border-radius:50px;
-		     box-shadow:0px 1px 2px rgba(0,0,0,0.2);
-		     text-shadow:0px 1px 1px rgba(0,0,0,0.3);
-		     color:black;
-		     border:0.2px solid #2299ff;
-		     background-repeat:repeat;
-		     background-size:auto;
-		     background-origin:padding-box;
-		     background-clip:padding-box;
-		     background-color:#87CEEB;
-		     background: linear-gradient(to bottom, #eeeff9 0%,#3399ff 100%);
+		<style type="text/css">
+		input{
+		background-color: pink;
 		}
-    </style>
+		</style>
+		<script language="javascript" type="text/javascript">
+		<!--
+		function f1(e){
+		e.style.backgroundColor = "4169E1";
+		}
+		//-->
+		</script>
+</style>
 </head>
 <body background="resources/images/test.jpg" style="text-align:center">
 	<form>
@@ -68,10 +51,8 @@
 	        <input type="CheckBox" id="hobby" name="hobby">篮球
 	        <input type="CheckBox" id="hobby" name="hobby">网球
 	        <br>
-	        <input type="submit" class="buttonStyle" value="提交"></input>
-	        <input type="reset" class="buttonStyle" value="重置"></input>
+	        <input type="submit"value="提交"  onclick="f1(this)"></input>
+	        <input type="reset" value="重置"  onclick="f1(this)"></input>
 	  </form>    
-
 </body>
-
 </html>

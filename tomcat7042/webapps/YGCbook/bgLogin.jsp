@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" contentType="text/html; charset=gbk"%>
+userInfoReg.jsp<%@ page language="java" import="java.util.*" contentType="text/html; charset=gbk"%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
