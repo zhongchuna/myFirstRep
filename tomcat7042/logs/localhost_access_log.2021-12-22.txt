@@ -1,0 +1,7 @@
+127.0.0.1 - - [22/Dec/2021:09:55:21 +0900] "GET /YGCbook/ HTTP/1.1" 200 32468
+127.0.0.1 - - [22/Dec/2021:09:55:21 +0900] "GET /YGCbook/images/like.png HTTP/1.1" 404 997
+127.0.0.1 - - [22/Dec/2021:09:55:22 +0900] "GET /YGCbook/userInfoReg.jsp HTTP/1.1" 200 1765
+127.0.0.1 - - [22/Dec/2021:09:55:22 +0900] "GET /YGCbook/resources/images/test.jpg HTTP/1.1" 200 3458475
+127.0.0.1 - - [22/Dec/2021:09:55:24 +0900] "GET /YGCbook/userInfoReg.jsp HTTP/1.1" 200 1765
+127.0.0.1 - - [22/Dec/2021:09:55:34 +0900] "GET /YGCbook/userInfoReg?username=zhangsan&password=888888&major=0&intro= HTTP/1.1" 200 396
+127.0.0.1 - - [22/Dec/2021:09:56:17 +0900] "GET /YGCbook/userInfoReg?username=zhangsan&password=888888&sex=0&major=2&intro=8888&hobby=0 HTTP/1.1" 200 396

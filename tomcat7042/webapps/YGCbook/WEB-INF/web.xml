@@ -325,6 +325,24 @@
 
 
 
+ 
+
+
+
+
+
+
+
+
+<servlet>
+    <servlet-name>userInfoRegServlet</servlet-name>
+    <servlet-class>co.jp.netwisdom.servlet.userInfoRegServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userInfoRegServlet</servlet-name>
+    <url-pattern>/userInfoReg</url-pattern>
+  </servlet-mapping>
+
 
 
 

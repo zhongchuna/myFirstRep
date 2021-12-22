@@ -9,3 +9,26 @@
 1639986407581	Delete element
 1639986458468	Delete element
 1639986612168	Copy file
+1640038744219	Copy compilation unit
+1640038811511	Rename type 'BookInfoDAO'
+1640040271176	Copy compilation unit
+1640040319497	Rename type 'DeleteSearchServlet'
+1640049538796	Delete element
+1640049614279	Copy compilation unit
+1640049679830	Rename type 'BookInfo'
+1640050089144	Copy compilation unit
+1640050101222	Rename type 'userInfoRegDAO'
+1640050778094	Copy compilation unit
+1640050797272	Rename type 'UserInfoReg'
+1640054169344	Delete element
+1640054211449	Copy compilation unit
+1640054337427	Delete element
+1640054350811	Copy compilation unit
+1640054420401	Rename type 'FindAllCustomerInfoServlet'
+1640134823954	Delete element
+1640134829973	Delete element
+1640134836948	Delete element
+1640135257729	Copy compilation unit
+1640135330084	Rename type 'SaveBookInfoServlet'
+1640135377589	Rename type 'userInfoReg'
+1640135570886	Rename package 'co.jp.netwisdom.servlet.userInfoRegServlet'

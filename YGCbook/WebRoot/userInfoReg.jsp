@@ -27,31 +27,30 @@
 		}
 		</style>
 		<script language="javascript" type="text/javascript">
-		<!--
 		function f1(e){
 		e.style.backgroundColor = "4169E1";
 		}
-		//-->
+		
 		</script>
-</style>
 </head>
 <body background="resources/images/test.jpg" style="text-align:center">
-	<form>
-	              姓名<input type="text" id="username" name="name"><br>
+	<form action="userInfoReg">
+
+	              姓名<input type="text" id="username" name="username"><br>
 	               密码<input type="password" id="password" name="password"><br>
-	               性别<input type="radio"  name="sex">男  
-	        <input type="radio"  name="sex">女<br>
-	               专业<select>
+	               性别<input type="radio"  name="sex" value=0>男  
+	        <input type="radio"  name="sex" value=1>女<br>
+	               专业<select name="major">
 	           <option value="0">软件工程</option>
 	           <option value="1">英语</option>
 	           <option value="2">数学</option>
 	        </select><br>
-	               简介<input type="textarea" id="textarea" name="textarea"><br>
-	               爱好<input type="CheckBox" id="hobby" name="hobby">足球
-	        <input type="CheckBox" id="hobby" name="hobby">篮球
-	        <input type="CheckBox" id="hobby" name="hobby">网球
+	               简介<input type="textarea" id="intro" name="intro"><br>
+	               爱好<input type="CheckBox" id="hobby" name="hobby" value=0>足球
+	        <input type="CheckBox" id="hobby" name="hobby" value=1>篮球
+	        <input type="CheckBox" id="hobby" name="hobby" value=2>网球
 	        <br>
-	        <input type="submit"value="提交"  onclick="f1(this)"></input>
+	        <input type="submit"value="提交" onclick="f1(this)"></input>
 	        <input type="reset" value="重置"  onclick="f1(this)"></input>
 	  </form>    
 </body>
