@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="co.jp.netwisdom.dao.UserInfoRegDAO"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+<fullyQualifiedTypeName name="co.jp.netwisdom.dao.UserInfoDAO"/>
+<fullyQualifiedTypeName name="co.jp.netwisdom.dao.HobbyDAO"/>
+<fullyQualifiedTypeName name="co.jp.netwisdom.entity.UserInfo"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="co.jp.netwisdom.entity.UserInfoHobby"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="co.jp.netwisdom.entity.Hobby"/>
+<fullyQualifiedTypeName name="co.jp.netwisdom.dto.UserInfoHobbyDto"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

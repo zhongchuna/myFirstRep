@@ -1,6 +1,13 @@
 package co.jp.netwisdom.dao;
 
+import java.sql.SQLException;
+import java.util.List;
+import java.util.Vector;
+
 import cn.key.dbManager.JdbcTemplate;
+import cn.key.mapping.UserInfoMapping;
+import co.jp.netwisdom.entity.UserInfo;
+
 
 public class UserInfoDAO {
 
@@ -15,10 +22,29 @@ public class UserInfoDAO {
 		try {
 			row =template.updata(sql, values);
 		}catch(Exception e){
-			e.printStackTrace();
+			e.printStackTrace(); 
 		}
 		
 		return row == 1;
 	}
-
+	public List<UserInfo> findUserInfo(String username,String sex,String major) {
+		String sql = "select * from userinfo where " ;
+		if(!"".equals(username)){
+			sql = sql + " username ='"+username+"' and";
+		}
+			
+		
+		if(!"".equals(major)){ 
+			sql = sql + " and major ='"+major+"'";
+		}
+		List<UserInfo> list = new Vector<UserInfo>();
+		try {
+			list = template.selete(sql, new UserInfoMapping());
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return  list;        
+	}
+	
 }

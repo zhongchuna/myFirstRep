@@ -336,7 +336,7 @@
 
 <servlet>
     <servlet-name>userInfoRegServlet</servlet-name>
-    <servlet-class>co.jp.netwisdom.servlet.userInfoRegServlet</servlet-class>
+    <servlet-class>co.jp.netwisdom.servlet.UserInfoRegServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>userInfoRegServlet</servlet-name>
