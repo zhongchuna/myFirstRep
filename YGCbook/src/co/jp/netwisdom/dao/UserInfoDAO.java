@@ -12,12 +12,18 @@ import co.jp.netwisdom.entity.UserInfo;
 public class UserInfoDAO {
 
 	private JdbcTemplate template = new JdbcTemplate();
-	public boolean insertUserInfo(String username,String password,String sex,String major,String intro) {
+	public boolean insertUserInfo( UserInfo userInfo) {
 		
 		int row =0;
 		String sql = "insert into userinfo values (?,?,?,?,?)";
 		
-		Object[] values =new Object[]{username, password, sex, major, intro};
+		Object[] values =new Object[]{
+				userInfo.getUsername(),
+				userInfo.getPassword(),
+				userInfo.getSex(),
+				userInfo.getMajor(),
+				userInfo.getIntro()
+				};
  
 		try {
 			row =template.updata(sql, values);
@@ -27,24 +33,6 @@ public class UserInfoDAO {
 		
 		return row == 1;
 	}
-	public List<UserInfo> findUserInfo(String username,String sex,String major) {
-		String sql = "select * from userinfo where " ;
-		if(!"".equals(username)){
-			sql = sql + " username ='"+username+"' and";
-		}
-			
-		
-		if(!"".equals(major)){ 
-			sql = sql + " and major ='"+major+"'";
-		}
-		List<UserInfo> list = new Vector<UserInfo>();
-		try {
-			list = template.selete(sql, new UserInfoMapping());
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		
-		return  list;        
-	}
+	
 	
 }

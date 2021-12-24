@@ -187,3 +187,6 @@
 127.0.0.1 - - [23/Dec/2021:18:21:47 +0900] "GET /YGCbook/userInfoReg.jsp HTTP/1.1" 200 1765
 127.0.0.1 - - [23/Dec/2021:18:21:56 +0900] "GET /YGCbook/userInfoReg?username=4454545&password=545454&sex=1&major=1&intro=5454545&hobby=0&hobby=1&hobby=2 HTTP/1.1" 302 -
 127.0.0.1 - - [23/Dec/2021:18:21:56 +0900] "GET /YGCbook/userInfoRegSucess.jsp HTTP/1.1" 200 396
+127.0.0.1 - - [23/Dec/2021:18:23:49 +0900] "GET /YGCbook/userInfoReg.jsp HTTP/1.1" 200 1765
+127.0.0.1 - - [23/Dec/2021:18:23:58 +0900] "GET /YGCbook/userInfoReg?username=99999&password=99999&sex=0&major=1&intro=999&hobby=0&hobby=2 HTTP/1.1" 302 -
+127.0.0.1 - - [23/Dec/2021:18:23:58 +0900] "GET /YGCbook/userInfoRegSucess.jsp HTTP/1.1" 200 396

@@ -16,8 +16,8 @@ public class HobbyDAO {
 		
 		int row =0;
 		String sql = "insert into hobby values(?,?)";
-		for(int i=0;i<hobbyArray.length;i++){
-			Object[] values =new Object[]{username, hobbyArray[i]};
+		for(String hobby:hobbyArray){
+			Object[] values =new Object[]{username, hobby};
 			try {
 				row = row +template.updata(sql, values);
 			}catch(Exception e){

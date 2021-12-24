@@ -327,12 +327,25 @@
 
  
 
+<!--
+	搜索页面的xml
+-->
+<servlet>
+    <servlet-name>UserSearchServlet</servlet-name>
+    <servlet-class>co.jp.netwisdom.servlet.UserSearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserSearchServlet</servlet-name>
+    <url-pattern>/userSearch</url-pattern>
+  </servlet-mapping>
 
 
 
 
 
-
+<!--
+	注册页面的xml
+-->
 
 <servlet>
     <servlet-name>userInfoRegServlet</servlet-name>

@@ -8,8 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import co.jp.netwisdom.dao.HobbyDAO;
 import co.jp.netwisdom.dao.UserInfoDAO;
-import co.jp.netwisdom.entity.UserInfo;
-public class UserInfoRegServlet extends HttpServlet {
+public class UserSearchServlet extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
@@ -27,15 +26,9 @@ public class UserInfoRegServlet extends HttpServlet {
 		UserInfoDAO daoForUserInfo = new UserInfoDAO();
 		//插入数据库 hobby
 		HobbyDAO daoForHobby = new HobbyDAO();
-		UserInfo userInfo = new UserInfo();
-		userInfo.setUsername(username);
-		userInfo.setPassword(password);
-		userInfo.setSex(sex);
-		userInfo.setMajor(major);
-		userInfo.setIntro(intro);
 		
 		 
-		if(daoForUserInfo.insertUserInfo(userInfo)&&daoForHobby.insertHobby(username, hobbyArray)){
+		if(daoForUserInfo.insertUserInfo(username, password, sex, major, intro)&&daoForHobby.insertHobby(username, hobbyArray)){
 			resp.sendRedirect("userInfoRegSucess.jsp");
 		}
 		 
