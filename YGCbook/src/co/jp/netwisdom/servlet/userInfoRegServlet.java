@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import co.jp.netwisdom.dao.HobbyDAO;
 import co.jp.netwisdom.dao.UserInfoDAO;
+import co.jp.netwisdom.entity.Hobby;
 import co.jp.netwisdom.entity.UserInfo;
 public class UserInfoRegServlet extends HttpServlet {
 
@@ -33,9 +34,10 @@ public class UserInfoRegServlet extends HttpServlet {
 		userInfo.setSex(sex);
 		userInfo.setMajor(major);
 		userInfo.setIntro(intro);
+		Hobby hobby =new Hobby(username,hobbyArray);
 		
 		 
-		if(daoForUserInfo.insertUserInfo(userInfo)&&daoForHobby.insertHobby(username, hobbyArray)){
+		if(daoForUserInfo.insertUserInfo(userInfo)&&daoForHobby.insertHobby(hobby)){
 			resp.sendRedirect("userInfoRegSucess.jsp");
 		}
 		 

@@ -23,3 +23,16 @@
 127.0.0.1 - - [24/Dec/2021:15:22:36 +0900] "GET /YGCbook/userInfoReg.jsp HTTP/1.1" 200 1765
 127.0.0.1 - - [24/Dec/2021:15:22:38 +0900] "GET /YGCbook/userInfoReg.jsp HTTP/1.1" 200 1765
 127.0.0.1 - - [24/Dec/2021:15:22:55 +0900] "GET /YGCbook/userInfoReg?username=789987&password=9877666&sex=0&major=0&intro=789987&hobby=0&hobby=1 HTTP/1.1" 200 -
+127.0.0.1 - - [24/Dec/2021:15:30:22 +0900] "GET /YGCbook/ HTTP/1.1" 200 32468
+127.0.0.1 - - [24/Dec/2021:15:30:22 +0900] "GET /YGCbook/images/like.png HTTP/1.1" 404 997
+127.0.0.1 - - [24/Dec/2021:15:30:22 +0900] "GET /YGCbook/userInfoReg.jsp HTTP/1.1" 200 1765
+127.0.0.1 - - [24/Dec/2021:15:30:24 +0900] "GET /YGCbook/userInfoReg.jsp HTTP/1.1" 200 1765
+127.0.0.1 - - [24/Dec/2021:15:30:36 +0900] "GET /YGCbook/userInfoReg?username=567&password=567&sex=0&major=0&intro=567&hobby=0&hobby=2 HTTP/1.1" 302 -
+127.0.0.1 - - [24/Dec/2021:15:30:36 +0900] "GET /YGCbook/userInfoRegSucess.jsp HTTP/1.1" 200 396
+127.0.0.1 - - [24/Dec/2021:15:32:00 +0900] "GET /YGCbook/userInfoReg?username=zhangsan&password=8888888&sex=0&major=1&intro=88888&hobby=0&hobby=1&hobby=2 HTTP/1.1" 302 -
+127.0.0.1 - - [24/Dec/2021:15:32:00 +0900] "GET /YGCbook/userInfoRegSucess.jsp HTTP/1.1" 200 396
+127.0.0.1 - - [24/Dec/2021:15:48:09 +0900] "GET /YGCbook/userSearch.jsp HTTP/1.1" 200 1455
+127.0.0.1 - - [24/Dec/2021:15:48:10 +0900] "GET /YGCbook/userInfoReg.jsp HTTP/1.1" 200 1765
+127.0.0.1 - - [24/Dec/2021:15:48:12 +0900] "GET /YGCbook/userInfoReg.jsp HTTP/1.1" 200 1765
+127.0.0.1 - - [24/Dec/2021:15:48:25 +0900] "GET /YGCbook/userInfoReg?username=wangyi&password=555&sex=0&major=0&intro=5555&hobby=0&hobby=1 HTTP/1.1" 302 -
+127.0.0.1 - - [24/Dec/2021:15:48:25 +0900] "GET /YGCbook/userInfoRegSucess.jsp HTTP/1.1" 200 396
