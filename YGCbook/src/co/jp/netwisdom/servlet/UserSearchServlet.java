@@ -25,15 +25,9 @@ public class UserSearchServlet extends HttpServlet {
 		UserInfoDAO dao = new UserInfoDAO();
 		List<UserInfo> list = new ArrayList<>();
 		 list = dao.selectUserInfo(username, sex, major);
-		
-		for (UserInfo userInfo : list) {	
-			System.out.println("您搜索的信息如下：");
-			System.out.println(userInfo.getUsername());	
-			System.out.println(userInfo.getPassword());	
-			System.out.println(userInfo.getSex());	
-			System.out.println(userInfo.getMajor());	
-			System.out.println(userInfo.getIntro());	
-			}
+		 
+		 req.setAttribute("list",list); 
+		 req.getRequestDispatcher("userSearch.jsp").forward(req, resp);
 	}	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)

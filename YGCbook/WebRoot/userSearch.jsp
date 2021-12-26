@@ -1,8 +1,10 @@
 <%@ page language="java" import="java.util.*" contentType="text/html; charset=utf-8"%>
+<%@page import="co.jp.netwisdom.entity.UserInfo"%>
 <html>
 <head>
-<title> 云工厂网上书店注册页面</title>
-<style>
+ <title> 用户检索页面</title>
+      <% List<UserInfo> list = (List<UserInfo>)request.getAttribute("list");%>
+ 	   <style>
 	    #username{
 	   border:1px solid black;
        width:180px;
@@ -49,6 +51,28 @@
 	        <input type="submit"value="检索" onclick="f1(this)"></input>
 	        <input type="reset" value="重置"  onclick="f1(this)"></input>  <br>
 	        检索一览
-	  </form>    
+	  </form>   
+	   	<table border="1" cellpadding="3" cellspacing="0" style="width: 60%;margin:auto" >
+	   		<tr>
+	   			<th>用户名</th>
+	   			<th>性别</th>
+	   			<th>专业</th>
+	   			<th>简介</th>
+	   		</tr>
+	   		
+	   		<%if(list != null){%>
+	   			<%for(UserInfo userinfo : list ){%>
+	   			
+	   			<tr>
+	   				<td><%=userinfo.getUsername()%></td>
+	   				<td><%=userinfo.getSex().replace("0","男").replace("1","女")%></td>
+	   				<td><%=userinfo.getMajor().replace("0","软件工程").replace("1","英语").replace("2","数学")%></td>
+	   				<td><%=userinfo.getIntro()%></td>   			
+	   	        </tr>	   			
+	   			 <%}%>
+			<%}%>
+	   		
+	   		
+	   	</table>
 </body>
 </html>
