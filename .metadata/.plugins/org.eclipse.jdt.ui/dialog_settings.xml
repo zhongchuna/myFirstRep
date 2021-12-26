@@ -24,6 +24,9 @@
 		<item value="false" key="SynchronizedModifier"/>
 		<item value="false" key="FinalModifier"/>
 	</section>
+	<section name="BuildPathsPropertyPage">
+		<item value="3" key="pageIndex"/>
+	</section>
 	<section name="GenerateConstructorUsingFieldsSelectionDialog">
 		<item value="false" key="OmitCallToSuper"/>
 	</section>
@@ -44,14 +47,16 @@
 		<item value="false" key="expanded1"/>
 		<item value="true" key="expanded0"/>
 	</section>
+	<section name="BreadcrumbItemDropDown">
+	</section>
 	<section name="NewPackageWizardPage">
 		<item value="false" key="create_package_info_java"/>
 	</section>
 	<section name="DialogBounds_AddUnimplementedConstructorsDialog">
 		<item value="1657" key="DIALOG_WIDTH"/>
 		<item value="11" key="DIALOG_Y_ORIGIN"/>
-		<item value="1033" key="DIALOG_X_ORIGIN"/>
-		<item value="1560" key="DIALOG_HEIGHT"/>
+		<item value="274" key="DIALOG_X_ORIGIN"/>
+		<item value="1020" key="DIALOG_HEIGHT"/>
 		<item value="1|Microsoft YaHei UI|18.0|0|WINDOWS|1|-36|0|0|0|400|0|0|0|-122|3|2|1|34|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
@@ -69,10 +74,10 @@
 		<item value="false" key="OmitCallToSuper"/>
 	</section>
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
-		<item value="1692" key="DIALOG_WIDTH"/>
-		<item value="11" key="DIALOG_Y_ORIGIN"/>
-		<item value="1023" key="DIALOG_X_ORIGIN"/>
-		<item value="1560" key="DIALOG_HEIGHT"/>
+		<item value="1942" key="DIALOG_WIDTH"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+		<item value="0" key="DIALOG_X_ORIGIN"/>
+		<item value="1042" key="DIALOG_HEIGHT"/>
 		<item value="1|Microsoft YaHei UI|18.0|0|WINDOWS|1|-36|0|0|0|400|0|0|0|-122|3|2|1|34|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
@@ -101,8 +106,8 @@
 	<section name="DialogBounds_GenerateConstructorUsingFieldsSelectionDialog">
 		<item value="1657" key="DIALOG_WIDTH"/>
 		<item value="11" key="DIALOG_Y_ORIGIN"/>
-		<item value="1033" key="DIALOG_X_ORIGIN"/>
-		<item value="1560" key="DIALOG_HEIGHT"/>
+		<item value="274" key="DIALOG_X_ORIGIN"/>
+		<item value="1020" key="DIALOG_HEIGHT"/>
 		<item value="1|Microsoft YaHei UI|18.0|0|WINDOWS|1|-36|0|0|0|400|0|0|0|-122|3|2|1|34|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
 	</section>
 </section>

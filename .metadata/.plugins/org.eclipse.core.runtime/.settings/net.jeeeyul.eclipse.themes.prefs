@@ -55,5 +55,6 @@ chrome-use-window-background-as-status-bar-background=false
 chrome-window-background-brightness=1.0
 chrome-window-background-hue=210.0
 chrome-window-background-saturation=0.18085106
+colorTheme=Default
 default-theme-loaded=true
 eclipse.preferences.version=1

@@ -328,7 +328,7 @@
  
 
 <!--
-	搜索页面的xml
+	userSearchxml
 -->
 <servlet>
     <servlet-name>UserSearchServlet</servlet-name>
@@ -344,7 +344,7 @@
 
 
 <!--
-	注册页面的xml
+	userInfoRegxml
 -->
 
 <servlet>
