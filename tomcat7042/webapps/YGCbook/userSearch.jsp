@@ -35,7 +35,7 @@
 		
 		</script>
 </head>
-<body background="resources/images/test.jpg" style="text-align:center">
+<body background="resources/images/test.jpg" style="text-align:center" >
 	<form action="userSearch">
 
 	              姓名<input type="text" id="username" name="username" ><br>
@@ -56,6 +56,7 @@
 	   		<tr>
 	   			<th>用户名</th>
 	   			<th>性别</th>
+	   			<th>爱好</th>
 	   			<th>专业</th>
 	   			<th>简介</th>
 	   		</tr>
@@ -63,9 +64,11 @@
 	   		<%if(list != null){%>
 	   			<%for(UserInfo userinfo : list ){%>
 	   			
-	   			<tr>
+	   			<tr >
+	
 	   				<td><%=userinfo.getUsername()%></td>
 	   				<td><%=userinfo.getSex().replace("0","男").replace("1","女")%></td>
+	   				<td>这是爱好</td>
 	   				<td><%=userinfo.getMajor().replace("0","软件工程").replace("1","英语").replace("2","数学")%></td>
 	   				<td><%=userinfo.getIntro()%></td>   			
 	   	        </tr>	   			
