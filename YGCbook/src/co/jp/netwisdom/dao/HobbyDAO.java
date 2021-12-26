@@ -1,11 +1,18 @@
 package co.jp.netwisdom.dao;
 
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
 import cn.key.dbManager.JdbcTemplate;
 import co.jp.netwisdom.entity.Hobby;
+import co.jp.netwisdom.mapping.HobbyMapping;
 
 
 public class HobbyDAO {
-
+ /**
+  * 此方法为注册技能使用的方法
+  */
 	private JdbcTemplate template = new JdbcTemplate();
 	public boolean insertHobby(Hobby hobby) {
 		
@@ -21,4 +28,22 @@ public class HobbyDAO {
 		}  
 		return row == hobby.getHobbyArray().length;
 	}
+
+/**
+ * 此方法为查询爱好机能使用的方法 
+ */
+	public List<Hobby> selectHobby(String username){
+		String sql ="select *,group_concat(hobby) from hobby group by username  ";
+		if(!username.equals("")){
+			sql = sql + " having username =' "+username+" '";
+		}
+		List<Hobby> list =new ArrayList<>();
+		try {
+			list =template.selete(sql,new HobbyMapping());
+		} catch (SQLException e) {
+		
+			e.printStackTrace();
+		} 
+		return list;
+	} 
 }

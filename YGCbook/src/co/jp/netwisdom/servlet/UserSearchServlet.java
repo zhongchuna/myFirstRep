@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import co.jp.netwisdom.dao.HobbyDAO;
 import co.jp.netwisdom.dao.UserInfoDAO;
+import co.jp.netwisdom.entity.Hobby;
 import co.jp.netwisdom.entity.UserInfo;
 public class UserSearchServlet extends HttpServlet {
 
@@ -25,7 +26,11 @@ public class UserSearchServlet extends HttpServlet {
 		UserInfoDAO dao = new UserInfoDAO();
 		List<UserInfo> list = new ArrayList<>();
 		 list = dao.selectUserInfo(username, sex, major); 
-		
+		 HobbyDAO daoForHobby = new HobbyDAO();
+		 List<Hobby> listForHobby =new ArrayList<>();
+		 listForHobby= daoForHobby.selectHobby(username);
+		 
+		 
 		 req.setAttribute("list",list); 
 		 req.getRequestDispatcher("userSearch.jsp").forward(req, resp);
 	}	
