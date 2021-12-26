@@ -33,9 +33,11 @@ public class HobbyDAO {
  * 此方法为查询爱好机能使用的方法 
  */
 	public List<Hobby> selectHobby(String username){
-		String sql ="select *,group_concat(hobby) from hobby group by username  ";
+		String sql ="select username,group_concat(hobby) as hobby from hobby group by username  ";
 		if(!username.equals("")){
-			sql = sql + " having username =' "+username+" '";
+			sql = sql + " having username ='"+username+"'";
+			System.out.println("#####"+sql);
+			
 		}
 		List<Hobby> list =new ArrayList<>();
 		try {

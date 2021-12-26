@@ -1,9 +1,11 @@
 <%@ page language="java" import="java.util.*" contentType="text/html; charset=utf-8"%>
 <%@page import="co.jp.netwisdom.entity.UserInfo"%>
+<%@page import="co.jp.netwisdom.entity.Hobby"%>
 <html>
 <head>
  <title> 用户检索页面</title>
       <% List<UserInfo> list = (List<UserInfo>)request.getAttribute("list");%>
+      <% List<Hobby> listForHobby = (List<Hobby>)request.getAttribute("listForHobby");%>
  	   <style>
 	    #username{
 	   border:1px solid black;
@@ -61,15 +63,19 @@
 	   			<th>简介</th>
 	   		</tr>
 	   		
-	   		<%if(list != null){%>
+	   		<%if(list != null && listForHobby != null){%>
 	   			<%for(UserInfo userinfo : list ){%>
 	   			
 	   			<tr >
 	
 	   				<td><%=userinfo.getUsername()%></td>
 	   				<td><%=userinfo.getSex().replace("0","男").replace("1","女")%></td>
-	   				<td>这是爱好</td>
-	   				<td><%=userinfo.getMajor().replace("0","软件工程").replace("1","英语").replace("2","数学")%></td>
+	   				<%for(Hobby hobby:listForHobby){%>
+	   					<%if(userinfo.getUsername().equals(hobby.getUsername())){%>
+	   					   <td><%=hobby.getHobby().replace("0","足球").replace("1","篮球").replace("2","网球")%></td>
+	   					<%}%>
+ 				<%}%>
+					<td><%=userinfo.getMajor().replace("0","软件工程").replace("1","英语").replace("2","数学")%></td>
 	   				<td><%=userinfo.getIntro()%></td>   			
 	   	        </tr>	   			
 	   			 <%}%>

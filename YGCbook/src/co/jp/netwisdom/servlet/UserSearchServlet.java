@@ -25,13 +25,15 @@ public class UserSearchServlet extends HttpServlet {
 		
 		UserInfoDAO dao = new UserInfoDAO();
 		List<UserInfo> list = new ArrayList<>();
-		 list = dao.selectUserInfo(username, sex, major); 
+		list = dao.selectUserInfo(username, sex, major); 
+		 
 		 HobbyDAO daoForHobby = new HobbyDAO();
 		 List<Hobby> listForHobby =new ArrayList<>();
 		 listForHobby= daoForHobby.selectHobby(username);
 		 
-		 
-		 req.setAttribute("list",list); 
+		 req.setAttribute("list",list);
+		 req.setAttribute("listForHobby",listForHobby);
+		 		 
 		 req.getRequestDispatcher("userSearch.jsp").forward(req, resp);
 	}	
 	@Override

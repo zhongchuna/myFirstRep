@@ -46,13 +46,14 @@ public class UserInfoDAO {
 		String sql = "select * from userinfo  where 1=1";
 		
 			if(!username.equals("")){
-				sql = sql + " and username =' "+username+" '";
+				sql = sql + " and username ='"+username+"'";
+			
 			}
 			if(sex !=null){
-				sql = sql + " and sex =' "+ sex + "'";
+				sql = sql + " and sex ='"+ sex + "'";
 			}
 			if(!major.equals("")){
-				sql = sql + " and major =' "+ major + "'";
+				sql = sql + " and major ='"+ major + "'";
 			}
 			List<UserInfo> list=new ArrayList<>();
 		
