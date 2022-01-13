@@ -2,6 +2,8 @@
 <html>
 <head>
 <title> 云工厂网上书店注册页面</title>
+
+
 <style>
 	    #username{
 	   border:1px solid black;
@@ -30,13 +32,17 @@
 		function f1(e){
 		e.style.backgroundColor = "4169E1";
 		}
-		
+		function changeActionName(actionName){
+	        document.getElementById("form").action = actionName;
+	        document.getElementById("username").action = false;
+	    }
 		</script>
 </head>
+
 <body background="resources/images/test.jpg" style="text-align:center">
 	<form action="userInfoReg">
 
-	              姓名<input type="text" id="username" name="username"><br>
+	              姓名<input type="text" id="username" name="username" ><br>
 	               密码<input type="password" id="password" name="password"><br>
 	               性别<input type="radio"  name="sex" value=0>男  
 	        <input type="radio"  name="sex" value=1>女<br>
@@ -54,4 +60,5 @@
 	        <input type="reset" value="重置"  onclick="f1(this)"></input>
 	  </form>    
 </body>
+
 </html>

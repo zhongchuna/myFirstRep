@@ -2,10 +2,15 @@
 <section name="Workbench">
 	<section name="org.eclipse.debug.ui.LAUNCH_CONFIGURATIONS_DIALOG_SECTION">
 		<item value="1488" key="DIALOG_WIDTH"/>
-		<item value=", " key="org.eclipse.debug.ui.EXPANDED_NODES"/>
+		<item value="" key="org.eclipse.debug.ui.EXPANDED_NODES"/>
 		<item value="1020" key="DIALOG_HEIGHT"/>
 		<item value="555" key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_1"/>
 		<item value="444" key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_2"/>
+		<item value="1|Microsoft YaHei UI|18.0|0|WINDOWS|1|-36|0|0|0|400|0|0|0|-122|3|2|1|34|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.debug.ui.SELECT_LAUNCH_SHORTCUT_DIALOG">
+		<item value="678" key="DIALOG_WIDTH"/>
+		<item value="693" key="DIALOG_HEIGHT"/>
 		<item value="1|Microsoft YaHei UI|18.0|0|WINDOWS|1|-36|0|0|0|400|0|0|0|-122|3|2|1|34|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="FAVORITES_DIALOG_SECTION">

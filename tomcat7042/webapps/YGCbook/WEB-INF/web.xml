@@ -355,6 +355,21 @@
     <servlet-name>userInfoRegServlet</servlet-name>
     <url-pattern>/userInfoReg</url-pattern>
   </servlet-mapping>
+  
+  
+  <!--
+	userUpdatexml
+-->
+
+<servlet>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <servlet-class>co.jp.netwisdom.servlet.UserUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserUpdateServlet</servlet-name>
+    <url-pattern>/userUpdate</url-pattern>
+  </servlet-mapping>
+  
 
 
 

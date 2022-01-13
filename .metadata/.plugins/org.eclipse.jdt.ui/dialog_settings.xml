@@ -10,9 +10,9 @@
 	</section>
 	<section name="DialogBounds_OverrideMethodDialog">
 		<item value="1681" key="DIALOG_WIDTH"/>
-		<item value="284" key="DIALOG_Y_ORIGIN"/>
-		<item value="1287" key="DIALOG_HEIGHT"/>
-		<item value="1027" key="DIALOG_X_ORIGIN"/>
+		<item value="11" key="DIALOG_Y_ORIGIN"/>
+		<item value="1020" key="DIALOG_HEIGHT"/>
+		<item value="250" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Microsoft YaHei UI|18.0|0|WINDOWS|1|-36|0|0|0|400|0|0|0|-122|3|2|1|34|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="OverrideMethodDialog">
@@ -29,6 +29,23 @@
 	</section>
 	<section name="GenerateConstructorUsingFieldsSelectionDialog">
 		<item value="false" key="OmitCallToSuper"/>
+	</section>
+	<section name="JavaSearchPage">
+		<item value="false" key="CASE_SENSITIVE"/>
+		<item value="11" key="INCLUDE_MASK"/>
+		<item value="1" key="HISTORY_SIZE"/>
+		<section name="HISTORY0">
+			<item value="11" key="includeMask"/>
+			<item value="2" key="limitTo"/>
+			<item value="0" key="scope"/>
+			<item value="selectUserInfo" key="pattern"/>
+			<item value="" key="javaElement"/>
+			<item value="2" key="searchFor"/>
+			<item value="0" key="matchLocations"/>
+			<item value="false" key="isCaseSensitive"/>
+			<list key="workingSets">
+			</list>
+		</section>
 	</section>
 	<section name="RefactoringWizard.preview">
 		<item value="400" key="height"/>

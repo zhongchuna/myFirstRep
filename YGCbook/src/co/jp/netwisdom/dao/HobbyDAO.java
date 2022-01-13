@@ -35,9 +35,7 @@ public class HobbyDAO {
 	public List<Hobby> selectHobby(String username){
 		String sql ="select username,group_concat(hobby) as hobby from hobby group by username  ";
 		if(!username.equals("")){
-			sql = sql + " having username ='"+username+"'";
-			System.out.println("#####"+sql);
-			
+			sql = sql + " having username ='"+username+"'";	
 		}
 		List<Hobby> list =new ArrayList<>();
 		try {
@@ -47,5 +45,21 @@ public class HobbyDAO {
 			e.printStackTrace();
 		} 
 		return list;
+	} 
+	//用户信息更新之前调用的查询方法(专门用来查询一个人的方法)
+	public Hobby selectHobby1(String username){
+		String sql ="select username,group_concat(hobby) as hobby from hobby group"
+				+ " by username having username ='"+username+"'";
+		
+	
+		
+		List<Hobby> list =new ArrayList<>();
+		try {
+			list =template.selete(sql,new HobbyMapping());
+		} catch (SQLException e) {
+		
+			e.printStackTrace();
+		} 
+		return list.get(0);
 	} 
 }

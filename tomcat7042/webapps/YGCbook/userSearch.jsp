@@ -34,7 +34,6 @@
 		function f1(e){
 		e.style.backgroundColor = "4169E1";
 		}
-		
 		</script>
 </head>
 <body background="resources/images/test.jpg" style="text-align:center" >
@@ -68,7 +67,7 @@
 	   			
 	   			<tr >
 	
-	   				<td><%=userinfo.getUsername()%></td>
+	   				<td><a href ="userUpdate?username=<%=userinfo.getUsername()%>"><%=userinfo.getUsername()%></a></td>
 	   				<td><%=userinfo.getSex().replace("0","男").replace("1","女")%></td>
 	   				<%for(Hobby hobby:listForHobby){%>
 	   					<%if(userinfo.getUsername().equals(hobby.getUsername())){%>
