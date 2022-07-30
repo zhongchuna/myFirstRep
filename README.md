@@ -1,5 +1,5 @@
-# 私人银行取款机项目
-   var money = 100888;
+# 私人银行取款机项目323222232
+   var money = 10;
     var total = 3;
     do{
         var handle = prompt("欢迎光临本银行ATM:\n请输入您的操作\n1.存钱;\n2.取钱;\n3.显示余额;\n4.退出\n")
@@ -25,7 +25,7 @@
 3.快速初始化函数 shift + AlT + s
 4.ctrl + 1  查看解决方案
 5.ctrl +f +t   快速检索
-6.ctrl + t  查看上级父类！
+6.ctrl + t  查看上级父类！33333
 7. CTRL + O   查看类结构图 
 8.  F2 重命名文件 
 9.ctrl +shift + r  查找文件
