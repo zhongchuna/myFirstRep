@@ -347,7 +347,6 @@
 
 
 
-
   <filter>
   	<filter-name>Encoding</filter-name>
   	<filter-class>cn.key.Filter.EncodingFilter</filter-class>
