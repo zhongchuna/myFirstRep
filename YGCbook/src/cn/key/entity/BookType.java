@@ -6,7 +6,7 @@ public class BookType {
 	private String bookTypeName;
 	private int isDelete;
 	private String context;
-
+	
 	public BookType() {
 		super();
 	}
@@ -27,14 +27,14 @@ public class BookType {
 		this.isDelete = isDelete;
 		this.context = context;
 	}
-
-
+	
+	
 	public BookType(int parentId, String bookTypeName, String context) {
 		this.parentId = parentId;
 		this.bookTypeName = bookTypeName;
 		this.context = context;
 	}
-
+	
 
 	public BookType(int bookTypeId, int parentId, String bookTypeName,
 			String context) {
@@ -62,7 +62,9 @@ public class BookType {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if ((obj == null) || (getClass() != obj.getClass()))
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
 			return false;
 		BookType other = (BookType) obj;
 		if (bookTypeId != other.bookTypeId)
@@ -77,7 +79,9 @@ public class BookType {
 				return false;
 		} else if (!context.equals(other.context))
 			return false;
-		if ((isDelete != other.isDelete) || (parentId != other.parentId))
+		if (isDelete != other.isDelete)
+			return false;
+		if (parentId != other.parentId)
 			return false;
 		return true;
 	}
@@ -119,5 +123,5 @@ public class BookType {
 	public void setContext(String context) {
 		this.context = context;
 	}
-
+	
 }

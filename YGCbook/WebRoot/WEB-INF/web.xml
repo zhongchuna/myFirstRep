@@ -325,51 +325,6 @@
 
 
 
- 
-
-<!--
-	userSearchxml
--->
-<servlet>
-    <servlet-name>UserSearchServlet</servlet-name>
-    <servlet-class>co.jp.netwisdom.servlet.UserSearchServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>UserSearchServlet</servlet-name>
-    <url-pattern>/userSearch</url-pattern>
-  </servlet-mapping>
-
-
-
-
-
-<!--
-	userInfoRegxml
--->
-
-<servlet>
-    <servlet-name>userInfoRegServlet</servlet-name>
-    <servlet-class>co.jp.netwisdom.servlet.UserInfoRegServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>userInfoRegServlet</servlet-name>
-    <url-pattern>/userInfoReg</url-pattern>
-  </servlet-mapping>
-  
-  
-  <!--
-	userUpdatexml
--->
-
-<servlet>
-    <servlet-name>UserUpdateServlet</servlet-name>
-    <servlet-class>co.jp.netwisdom.servlet.UserUpdateServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>UserUpdateServlet</servlet-name>
-    <url-pattern>/userUpdate</url-pattern>
-  </servlet-mapping>
-  
 
 
 
