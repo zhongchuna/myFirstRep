@@ -1,1 +1,0 @@
-INDEX VERSION 1.126+D:\20220731\myFirstRep\.metadata\.plugins\org.eclipse.jdt.core
